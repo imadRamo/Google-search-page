@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Google</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="top-navbar clearfix">
             <ul>
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
-                <li><a href="#">Options</a></li>
-                <li><button>Sign in</button></li>
+                <li><button id="optbtn">Options</button></li>
+                <li><button id="signinbtn">Sign in</button></li>
             </ul>
         </nav>
     </header>
-    <section id="search">
-        <form action="" method="">
-            <label for="search"></label>
+    <section class="search">
+        <form class="search-form" action="" method="">
+            <img src="/img/google-logo.png" alt="google logo">
+            <label aria-hidden="true" for="search">Search</label>
             <input type="text" name="search" id="search" />
             <button name="voiceSearch" id="voiceSearchbtn">Voice Search</button>
             <button id="searchbtn">Google Search</button>
@@ -29,7 +31,7 @@
         </form>
     </section>
     <footer>
-        <nav>
+        <nav class="footer-navbar clearfix">
             <ul>
                 <li><a href="#">Advertising</a></li>
                 <li><a href="#">Business</a></li>
