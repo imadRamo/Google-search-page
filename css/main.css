@@ -1,4 +1,4 @@
-/* Reset style */
+/********  Reset style *************/
 
 html,
 body,
@@ -119,4 +119,170 @@ a {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+}
+
+
+/********* end of Reset styles *************/
+
+
+/********* Custom style ********************/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button {
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited,
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: black;
+}
+
+.top-navbar {
+    padding: 20px 30px;
+}
+
+.footer-navbar ul:last-of-type,
+.top-navbar ul {
+    float: right;
+}
+
+.footer-navbar ul li,
+.top-navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.top-navbar ul li:last-of-type {
+    margin-right: 0;
+}
+
+.search-form {
+    min-width: 45%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.search-form input {
+    width: 100%;
+    display: block;
+    margin: 30px 0px;
+    line-height: 34px;
+    font-size: 16px;
+    text-indent: 20px;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .09);
+    border-radius: 2px;
+    box-shadow: 1px 1px rgba(0, 0, 0, .2);
+    padding: 5px 0px;
+}
+
+.search-form input:hover,
+.search-form input:focus {
+    outline: 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .25);
+}
+
+.search-form img {
+    max-width: 100%;
+    height: auto;
+}
+
+.search-form label {
+    position: absolute;
+    visibility: hidden;
+}
+
+#searchbtn,
+#luckysearchbtn,
+#signinbtn {
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background: #F4F4F4;
+    color: #777777;
+}
+
+#searchbtn:hover,
+#luckysearchbtn:hover {
+    color: #222222;
+    outline: 1px solid rgba(100, 100, 100, .39);
+    background: #F9F9F9;
+}
+
+#signinbtn {
+    background: #4585F3;
+    color: white;
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+#optbtn {
+    width: 22px;
+    text-indent: -9999px;
+    overflow: hidden;
+    line-height: 18px;
+    background-color: transparent;
+    background-image: url('../img/more.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+#voiceSearchbtn {
+    border: none;
+    background-color: transparent;
+    background-image: url('../img/Microphone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 20px;
+    width: 24px;
+    text-indent: -9999px;
+    overflow: hidden;
+    line-height: 34px;
+    padding: 5px 0;
+    position: absolute;
+    right: 10px;
+    top: 54%;
+}
+
+.footer-navbar ul:first-of-type {
+    float: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 30px;
+    background: #F2F2F2;
+    border-top: 1px solid rgba(30, 30, 30, .12);
 }
